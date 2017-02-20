@@ -5,7 +5,17 @@
     height: 60px;
     margin:0 auto;
 }
-.name{
+
+.menu{
+    bottom: 0;
+    padding: 0;
+    position: fixed;
+    max-width: none;
+    width: 100%;
+    z-index: 999;
+}
+
+.menu .name{
     margin-left: auto;
     font-family: 微软雅黑;
     text-align: center;
@@ -16,4 +26,16 @@
     position: relative; /*脱离文档流*/
     top: 50%; /*偏移*/
     transform: translateY(-50%);
+}
+
+.images{
+    width:100%;
+    height:100%
+}
+
+.images .image{
+    box-shadow: 1px 1px 20px #000;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
 }

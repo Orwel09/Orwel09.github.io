@@ -1,0 +1,19 @@
+.head{
+    opacity:0.7;
+    background: #000000;
+    width: 25%;
+    height: 60px;
+    margin:0 auto;
+}
+.name{
+    margin-left: auto;
+    font-family: 微软雅黑;
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
+    opacity:1;
+    /*上下居中样式*/
+    position: relative; /*脱离文档流*/
+    top: 50%; /*偏移*/
+    transform: translateY(-50%);
+}

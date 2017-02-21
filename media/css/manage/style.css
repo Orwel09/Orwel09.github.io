@@ -15,7 +15,7 @@
     z-index: 999;
 }
 
-.menu .name{
+.menu h1.name{
     margin-left: auto;
     font-family: 微软雅黑;
     text-align: center;
@@ -30,7 +30,7 @@
 
 .images{
     width:100%;
-    height:100%
+    height:100%;
 }
 
 .images .image{

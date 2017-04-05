@@ -77,3 +77,45 @@ a:hover{
 .inline{
     display: inline-block;
 }
+.firstMenu{
+    clear: both;
+    font-size:15px;
+    color:#AA8EC2;
+    position: relative;
+    float: left;
+    z-index: 1;
+    list-style: none;
+}
+.firstMenu .secondMenu{
+    background-color: #ffffff !important;
+    width: 110px;
+    border: 1px solid #AA8EC2;
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: -1px;
+}
+.firstMenu:active .secondMenu{
+    background-color: #ffffff !important;
+    width: 110px;
+    border: 1px solid #AA8EC2;
+    display: block !important;
+    position: absolute;
+    top: 25px;
+    left: -1px;
+}
+.firstMenu:hover .secondMenu{
+    background-color: #ffffff !important;
+    width: 110px;
+    border: 1px solid #AA8EC2;
+    display: block !important;
+    position: absolute;
+    top: 25px;
+    left: -1px;
+}
+.secondMenuText{
+    margin: 7px 10px 0px 10px;
+}
+.bottom7{
+    margin-bottom: 7px!important;
+}

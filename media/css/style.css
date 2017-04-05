@@ -115,6 +115,7 @@ a:hover{
 }
 .secondMenuText{
     margin: 7px 10px 0px 10px;
+    cursor: hand;
 }
 .bottom7{
     margin-bottom: 7px!important;

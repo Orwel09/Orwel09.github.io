@@ -71,7 +71,7 @@ a{
     color:#2D7ADD;
 }
 a:hover{
-    cursor:hand;
+    cursor:pointer;
     color: red;
 }
 .inline{
@@ -95,28 +95,53 @@ a:hover{
     top: 25px;
     left: -1px;
 }
-.firstMenu:active .secondMenu{
-    background-color: #ffffff !important;
-    width: 110px;
-    border: 1px solid #AA8EC2;
-    display: block !important;
-    position: absolute;
-    top: 25px;
-    left: -1px;
-}
-.firstMenu:hover .secondMenu{
-    background-color: #ffffff !important;
-    width: 110px;
-    border: 1px solid #AA8EC2;
-    display: block !important;
-    position: absolute;
-    top: 25px;
-    left: -1px;
-}
 .secondMenuText{
     margin: 7px 10px 0px 10px;
-    cursor: hand;
+    cursor: pointer;
 }
 .bottom7{
     margin-bottom: 7px!important;
+}
+.blueButton{
+    margin-top:15px;
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: #2D7ADD;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.mar0{
+    margin-left: 0px;
+}
+.bigTitle{
+    margin-top: 65px;
+    margin-bottom: 25px;
+    font-size: 56px;
+    color: #AA8EC2;
+}
+.text20{
+    color: #AA8EC2;
+    font-size: 20px;
+}
+.text{
+    color: #AA8EC2;
+}
+.block{
+    display: block;
+}
+.unshow{
+    display:none;
+}
+.marBottom10{
+    margin-bottom: 10px;
+}
+.float-left {
+    float: left;
+}
+.top-inline{
+    display: inline-block;
+    vertical-align:text-top;
 }

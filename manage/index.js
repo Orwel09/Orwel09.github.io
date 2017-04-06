@@ -1,11 +1,35 @@
-
-
 (function(){
     //页面初始化
     window.onload = function(){
 
     };
-    function onEnter(){
+
+    function onEnter () {
+        bindLabelEventInit ();
+        paging ();
+    }
+
+    function paging(){
+        var home = new Vue({
+            el:"#home",
+            data:{},
+            methods:{
+                showMenu:function(){
+                    var e = event.target;
+                    if($(e).next().css("display")=='none'){
+                        $(".secondMenu").css("display","none");
+                        $(e).next().css("display","block");
+                    }else{
+                        $(".secondMenu").css("display","none");
+                        $(e).next().css("display","none");
+                    }
+                },
+            }
+        })
+    }
+
+    //长期存在事件
+    function bindLabelEventInit(){
         var slideBox = $(".slideBox");
         var ul = slideBox.find("ul");
         var oneWidth = slideBox.find("ul li").eq(0).width();
@@ -56,6 +80,6 @@
     }
     onEnter();
 })();
-$(document).ready(function(){
-
-});
+//$(document).ready(function(){
+//
+//});

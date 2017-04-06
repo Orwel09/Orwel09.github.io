@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="media/css/style.css" type="text/css" />
 </head>
 <body>
-<div id="products">
+<div id="products" @click="downMenu()">
     <!--菜单栏-->
     <div class="top" style="margin-top: 30px;">
         <img src="media/image/awellcure.png" onclick="document.location ='index.html'" class="top-inline" style="margin-left:25px;width:200px;height: 34px;">
@@ -21,7 +21,7 @@
             <ul id="menu" class="mar0" style="margin-top: 10px;">
                 <li>
                     <div class="firstMenu">
-                        <a class="text" @click="showMenu()">产品中心</a>
+                        <a class="text" @click.stop="showMenu()">产品中心</a>
                         <div class="secondMenu">
                             <div class="secondMenuText" onclick="document.location ='product.html'">Ulticure</div>
                             <div class="secondMenuText" onclick="document.location ='product.html'">Procure</div>
@@ -31,7 +31,7 @@
                 </li>
                 <li>
                     <div class="firstMenu">
-                        <a class="text" @click="showMenu()">技术简介</a>
+                        <a class="text" @click.stop="showMenu()">技术简介</a>
                         <div class="secondMenu">
                             <div class="secondMenuText">LED封装技术</div>
                             <div class="secondMenuText">智能控制技术</div>
@@ -43,7 +43,7 @@
                 </li>
                 <li>
                     <div class="firstMenu">
-                        <a class="text" @click="showMenu()">应用行业</a>
+                        <a class="text" @click.stop="showMenu()">应用行业</a>
                         <div class="secondMenu">
                             <div class="secondMenuText">柔版印刷</div>
                             <div class="secondMenuText">标签印刷</div>
@@ -55,7 +55,7 @@
                 </li>
                 <li>
                     <div class="firstMenu">
-                        <a class="text" @click="showMenu()">关于我们</a>
+                        <a class="text" @click.stop="showMenu()">关于我们</a>
                         <div class="secondMenu">
                             <div class="secondMenuText">公司概况</div>
                             <div class="secondMenuText">发展历程</div>

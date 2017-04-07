@@ -125,6 +125,12 @@ a:hover{
     font-size: 56px;
     color: #AA8EC2;
 }
+.middleTitle{
+    padding-top: 30px;
+    margin-bottom: 25px;
+    font-size: 40px;
+    color: #2D7ADD;
+}
 .border1{
     margin-top: 20px;
     border: 1px solid #bebebe;
@@ -158,4 +164,7 @@ a:hover{
 }
 .vertical-middle{
     vertical-align:middle;
+}
+.marTop10{
+    margin-top: 10px;
 }

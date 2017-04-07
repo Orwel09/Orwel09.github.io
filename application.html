@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="media/css/style.css" type="text/css" />
 </head>
 <body>
-<div id="products" @click="downMenu()">
+<div id="application" @click="downMenu()">
     <!--菜单栏-->
     <div class="top" style="margin-top: 30px;">
         <img src="media/image/awellcure.png" onclick="document.location ='index.html'" class="top-inline pointer" style="margin-left:25px;width:200px;height: 34px;">
@@ -70,25 +70,27 @@
         </div>
     </div>
     <!--产品介绍-->
-    <div style="margin-left: 25px;margin-right: 25px;margin-bottom: 40px;">
-        <div class="bigTitle">UV LED产品系列</div>
-        <a class="blueButton"style="font-size: 18px;">索取更多信息>></a>
-        <div style="font-size:20px;margin-top: 32px;line-height: 36px;">
-            美国锋翔科技公司是 LED 固化技术应用的先驱，多年来一贯专注于UV LED产品的研发与制造。锋翔科技通过系统研发方式，以LED光矩阵，光学导向，散热管理和电子性能为四大支柱，设计生产出一系列具有卓越性能的LED固化产品。锋翔科技固化产品体型小，易集成，为设备制造商提供高UV 输出能量，坚固耐用的固化产品和解决方案。锋翔科技产品采用365纳米，385纳米，395纳米和405纳米的紫外光波长，提供 风冷 和水冷两类固化光源，产品在无故障操作的前提下，确保最高的UV持续输出能力。锋翔科技通过了ISO 9000:2008质量管理体系认证。锋翔科技提供全球销售与技术支持，确保客户固化应用过程稳定可靠。
+    <div style="margin-left: 25px;margin-right: 25px;margin-bottom: 40px;" class="block">
+        <div class="span9 inline">
+            <div class="bigTitle">应用行业</div>
+            <a class="blueButton"style="font-size: 18px;">索取更多信息>></a>
+            <div  style="font-size:20px;margin-top: 32px;line-height: 36px; word-wrap:break-word; word-break:normal;">
+                锋翔科技公司先进的UV LED产品用于印刷，电子，木材涂料，树脂，瓶印刷，医疗，工业组装等各个领域，为多种行业提供优化的固化设备。锋翔科技随时能够为根据客户的具体生产过程提供最新的工业领域的特需解决方案，全面满足您对紫外线输出功率和卓越工艺性能的需求。
+            </div>
         </div>
+        <div class="span7 inline" style="padding-top: 55px;padding-left: 20px;">
+            <img class="marBottom10" src="media/image/application.png">
+        </div>
+        <div class="border1" style="clear: both"></div>
     </div>
-    <!--产品区域-->
+    <!--应用区域-->
     <div style="margin:0px 25px 25px 25px">
         <div class="row-fluid">
-            <div v-for="data in list" class="span3 inline" style="height: 256px;font-size:16px;margin:10px 10px 20px 1px;">
-                <div v-if="$index/4 >= 1" class="border1" style="margin-bottom:20px;margin-right:20px;"></div>
-                <span class="block marBottom10 text20">{{data.name}}({{data.type}})</span>
-                <img class="block marBottom10" src="media/image/FireEdge.png">
-                <span class="block marBottom10"style="line-height: 35px;word-wrap: break-word;">固化区域(mm):
-                    {{data.size}}
-                </span>
-                <span class="block marBottom10">峰值辐照度:≤
-                    {{data.length}}W/cm²
+            <div v-for="data in list" class="span3 inline" style="height: 620px;font-size:16px;margin:10px 10px 20px 1px;">
+                <span class="block marBottom10 text24">{{data.name}}</span>
+                <img class="block marBottom10" src="media/image/{{data.image}}">
+                <span class="block marBottom10" style="margin-right:70px;line-height:30px;">
+                    {{data.text}}
                 </span>
             </div>
         </div>
@@ -111,6 +113,6 @@
 <script type="text/javascript" src="media/js/jquery-1.91.min.js"></script>
 <script type="text/javascript" src="media/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="media/js/vue.js"></script>
-<script type="text/javascript" src="manage/product.js"></script>
+<script type="text/javascript" src="manage/application.js"></script>
 </body>
 </html>

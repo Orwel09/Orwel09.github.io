@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="media/css/style.css" type="text/css" />
 </head>
 <body>
-<div id="products" @click="downMenu()">
+<div id="contact" @click="downMenu()">
     <!--菜单栏-->
     <div class="top" style="margin-top: 30px;">
         <img src="media/image/awellcure.png" onclick="document.location ='index.html'" class="top-inline pointer" style="margin-left:25px;width:200px;height: 34px;">
@@ -69,27 +69,79 @@
             </ul>
         </div>
     </div>
-    <!--产品介绍-->
-    <div style="margin-left: 25px;margin-right: 25px;margin-bottom: 40px;">
-        <div class="bigTitle">UV LED产品系列</div>
-        <a class="blueButton"style="font-size: 18px;">索取更多信息>></a>
-        <div style="font-size:20px;margin-top: 32px;line-height: 36px;">
-            美国锋翔科技公司是 LED 固化技术应用的先驱，多年来一贯专注于UV LED产品的研发与制造。锋翔科技通过系统研发方式，以LED光矩阵，光学导向，散热管理和电子性能为四大支柱，设计生产出一系列具有卓越性能的LED固化产品。锋翔科技固化产品体型小，易集成，为设备制造商提供高UV 输出能量，坚固耐用的固化产品和解决方案。锋翔科技产品采用365纳米，385纳米，395纳米和405纳米的紫外光波长，提供 风冷 和水冷两类固化光源，产品在无故障操作的前提下，确保最高的UV持续输出能力。锋翔科技通过了ISO 9000:2008质量管理体系认证。锋翔科技提供全球销售与技术支持，确保客户固化应用过程稳定可靠。
+    <!--公司概况-->
+    <div style="margin-left: 25px;margin-right: 25px;margin-bottom: 40px;" class="block">
+        <div class="span8 inline">
+            <div class="bigTitle">索取更多信息</div>
+        </div>
+        <div class="span6 inline" style="padding: 25px 0px 30px 32px;">
+            <img class="marBottom10" src="media/image/map.png">
         </div>
     </div>
-    <!--产品区域-->
-    <div style="margin:0px 25px 25px 25px">
+    <!-公司内容-->
+    <div style="margin:0px 25px 25px 40px">
         <div class="row-fluid">
-            <div v-for="data in list" class="span3 inline" style="height: 256px;font-size:16px;margin:10px 10px 20px 1px;">
-                <div v-if="$index/4 >= 1" class="border1" style="margin-bottom:20px;margin-right:20px;"></div>
-                <span class="block marBottom10 text20">{{data.name}}({{data.type}})</span>
-                <img class="block marBottom10" src="media/image/FireEdge.png">
-                <span class="block marBottom10"style="line-height: 35px;word-wrap: break-word;">固化区域(mm):
-                    {{data.size}}
+            <div class="span6 inline" style="padding-right:70px;font-size:16px;margin:10px 10px 20px 0px;">
+                <span class="block marBottom10 text24">销售</span>
+                <span class="marBottom10" style="line-height:30px;">
+                    美国锋翔科技公司上海代表处<br>
+                    上海市黄浦区福州路666号华鑫海欣大厦13楼E单元<br>
+                    邮编：200001<br>
+                    电话：+86-021-6091 0236<br>
+                    传真：+86-021-6091 0237<br><br>
+                    Phoseon Technology Shanghai<br>
+                    Unit E, 13F, Huaxin Haixin Building, No. 666 Fuzhou Road, Huangpu District,<br>
+                    Shanghai 200001 China<br>
+                    Tel: +86-021-6091 0236<br>
+                    Fax: +86-021-6091 0237<br><br>
+                    美国锋翔科技公司台湾代表处<br>
+                    台北市信义区基隆路一段200号4F<br>
+                    邮编：110<br>
+                    电话：+886-2-8723 9909<br>
+                    传真：+886-2-2722 7022<br><br>
+                    Phoseon Technology Taiwan<br>
+                    4F, No.200 Sec. 1, Keelung Road,<br>
+                    Xinyi District, Taipei City 110, Taiwan<br>
+                    Tel: +886-2-8723 9909<br>
+                    Fax: +886-2-2722 7022<br>
+                    Corporate Office:<br><br>
+                    Phoseon Technology<br>
+                    7425 NW Evergreen Parkway<br>
+                    Hillsboro OR 97124 USA<br>
+                    Tel: +1 503 439 6446<br>
+                    Fax: +1 503 439 6408<br>
                 </span>
-                <span class="block marBottom10">峰值辐照度:≤
-                    {{data.length}}W/cm²
-                </span>
+            </div>
+            <div class="span6 inline" style="height: 420px;padding-right:70px;font-size:16px;margin:10px 10px 20px 0px;">
+                <span class="block marBottom10 text24" style="line-height: 30px;margin-top:-5px;">晶固智能是LED UV固化的先锋，了解更多锋翔科技 UV LED 产品信息。</span>
+                <span class="block">*电子邮件:</span>
+                <input type="text" class="span12 marTop10 marBottom10" id="mail">
+                <div class="span12" style="margin: 0px">
+                    <div class="span6">
+                        <span class="block inline" style="margin-left: 0px;">*姓名:</span>
+                        <input type="text" class="span12 marTop10 marBottom10" id="name">
+                    </div>
+                    <div class="span6">
+                        <span class="block inline">*国家:</span>
+                        <input type="text" class="span12 marTop10 marBottom10" id="country">
+                    </div>
+                </div>
+                <span class="block">*公司:</span>
+                <input type="text" class="span12 marTop10 marBottom10" id="company">
+                <div class="span12" style="margin: 0px">
+                    <div class="span6">
+                        <span class="block inline" style="margin-left: 0px;">电话:</span>
+                        <input type="text" class="span12 marTop10 marBottom10" id="phone">
+                    </div>
+                    <div class="span6">
+                        <span class="block inline">城市:</span>
+                        <input type="text" class="span12 marTop10 marBottom10" id="city">
+                    </div>
+                </div>
+                <span class="block">您对晶固的哪些产品感兴趣？:</span>
+                <textarea lows="10" class="span12 marTop10 marBottom10" id="interesting">
+                </textarea>
+                <a class="blueButton"style="font-size: 18px;background-color: blueviolet">提交</a>
             </div>
         </div>
     </div>
@@ -111,6 +163,6 @@
 <script type="text/javascript" src="media/js/jquery-1.91.min.js"></script>
 <script type="text/javascript" src="media/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="media/js/vue.js"></script>
-<script type="text/javascript" src="manage/product.js"></script>
+<script type="text/javascript" src="manage/contact.js"></script>
 </body>
 </html>

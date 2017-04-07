@@ -162,6 +162,9 @@ a:hover{
     display: inline-block;
     vertical-align:text-top;
 }
+.vertical-top{
+    vertical-align:text-top;
+}
 .vertical-middle{
     vertical-align:middle;
 }

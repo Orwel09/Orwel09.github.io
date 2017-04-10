@@ -47,7 +47,7 @@
         //左右按钮的控制效果
         $(".next").stop(true,true).click(function (){
             sw++;
-            if(sw==number.length){sw=0};
+            if(sw==number.length){sw=0}
             number.eq(sw).trigger("click");
         });
         $(".prev").stop(true,true).click(function (){

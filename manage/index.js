@@ -24,6 +24,9 @@
                         $(e).next().css("display","none");
                     }
                 },
+                downMenu:function(){
+                    $(".secondMenu").css("display","none");
+                }
             }
         })
     }
@@ -80,6 +83,7 @@
     }
     onEnter();
 })();
+//另一种页面初始化，开启需关闭第一种
 //$(document).ready(function(){
 //
 //});

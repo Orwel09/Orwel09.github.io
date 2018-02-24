@@ -4,7 +4,6 @@
 (function(){
     //页面初始化
     window.onload = function(){
-
     };
     function paging(){
         var application = new Vue({
@@ -37,21 +36,6 @@
                         text:"UVLED可用于工业制造，设计与维修应用。工业流程通常要求产品在恶劣甚至时苛刻的制造，设计和维修的环境中工作。 UV LED 固化灯使用固态半导体技术，其优点在于它允许即时开关及 UV 输出能量的控制，方便于客户在苛刻的环境条件下成功地实现固化。UV LED 工业组装应用案例可见于风电叶片的修复与零部件生产和精加工。"
                     }
                 ]
-            },
-            methods:{
-                showMenu:function(){
-                    var e = event.target;
-                    if($(e).next().css("display")=='none'){
-                        $(".secondMenu").css("display","none");
-                        $(e).next().css("display","block");
-                    }else{
-                        $(".secondMenu").css("display","none");
-                        $(e).next().css("display","none");
-                    }
-                },
-                downMenu:function(){
-                    $(".secondMenu").css("display","none");
-                }
             }
         })
     }

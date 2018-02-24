@@ -3,71 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="awellcure,UV led,固化">
+    <meta name="keywords" content="awellcure,UV LED,固化">
     <meta name="description"
           content="晶固（上海）智能系统有限公司是LED封装及技能控制技术应用于UV固化行业的领导者">
     <meta name="author" content="王勇强">
     <title>晶固（上海）智能系统有限公司</title>
-    <link rel="stylesheet" href="media/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="media/css/style.css" type="text/css" />
 </head>
 <body>
-<div id="privacy" @click="downMenu()">
+<div id="privacy" onclick="javascript:$('.secondMenu').css('display','none');">
     <!--菜单栏-->
-    <div class="top" style="margin-top: 30px;">
-        <img src="media/image/awellcure.png" onclick="document.location ='index.html'" class="top-inline pointer" style="margin-left:25px;width:200px;height: 34px;">
-        <div class="top-inline" style="margin-left: 20px;">
-            <div style="border: 2px solid#AA8EC2;width: 400px;"></div>
-            <ul id="menu" class="mar0" style="margin-top: 10px;">
-                <li>
-                    <div class="firstMenu">
-                        <a class="text" @click.stop="showMenu()">产品中心</a>
-                        <div class="secondMenu">
-                            <div class="secondMenuText" onclick="document.location ='product.html'">Ulticure</div>
-                            <div class="secondMenuText" onclick="document.location ='product.html'">Procure</div>
-                            <div class="secondMenuText bottom7" onclick="document.location ='product.html'">Ekocure</div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="firstMenu">
-                        <a class="text" @click.stop="showMenu()">技术简介</a>
-                        <div class="secondMenu">
-                            <div class="secondMenuText" onclick="document.location ='technology.html'">LED封装技术</div>
-                            <div class="secondMenuText" onclick="document.location ='technology.html'">智能控制技术</div>
-                            <div class="secondMenuText" onclick="document.location ='technology.html'">散热技术</div>
-                            <div class="secondMenuText" onclick="document.location ='technology.html'">光学技术</div>
-                            <div class="secondMenuText bottom7" onclick="document.location ='technology.html'">制程管理</div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="firstMenu">
-                        <a class="text" @click.stop="showMenu()">应用行业</a>
-                        <div class="secondMenu">
-                            <div class="secondMenuText" onclick="document.location ='application.html'">柔版印刷</div>
-                            <div class="secondMenuText" onclick="document.location ='application.html'">标签印刷</div>
-                            <div class="secondMenuText" onclick="document.location ='application.html'">标签印刷</div>
-                            <div class="secondMenuText" onclick="document.location ='application.html'">标签印刷</div>
-                            <div class="secondMenuText bottom7" onclick="document.location ='application.html'">标签印刷</div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="firstMenu">
-                        <a class="text" @click.stop="showMenu()">关于我们</a>
-                        <div class="secondMenu">
-                            <div class="secondMenuText" onclick="document.location ='company.html'">公司概况</div>
-                            <div class="secondMenuText" onclick="document.location ='company.html'">发展历程</div>
-                            <div class="secondMenuText" onclick="document.location ='business-activity.html'">企业活动</div>
-                            <div class="secondMenuText" onclick="document.location ='business-activity.html'">行业活动</div>
-                            <div class="secondMenuText" onclick="document.location ='file-download.html'">文件下载</div>
-                            <div class="secondMenuText bottom7" onclick="document.location ='contact.html'">联系我们</div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
+    <div id="app-nav">
+        <app-nav></app-nav>
     </div>
     <!--应用行业介绍-->
     <div style="margin-left: 25px;margin-right: 25px;margin-bottom: 40px;" class="block">
@@ -104,23 +52,15 @@
         </span>
     </div>
     <!--底部-->
-    <div style="width: 100%;height: 169px;background-color: #9E8EBD;">
-        <div style="text-align: center;padding-top: 28px;color:#fff;">
-            <a href="contact.html" style="font-size: 16px;color: #fff;">联系我们</a>&nbsp;&nbsp;|
-            <a href="privacy.html" style="font-size: 16px;color: #fff;">隐私权政策</a>&nbsp;&nbsp;|
-            <a href="" style="font-size: 16px;color: #fff;">网站布局</a>&nbsp;&nbsp;|
-        </div>
-        <div style="text-align: center;margin-top: 28px;font-size: 16px;color: #fff;">
-            Awellcure是LED封装技术及智能控制技术应用于UV固化的领导者
-        </div>
-        <div style="text-align: center;margin-top: 28px;font-size: 16px;color: #fff;">
-            CopyRight © 2017-2018 awellcure.com 沪ICP备05000000号
-        </div>
+    <div id="app-footer">
+        <app-footer></app-footer>
     </div>
 </div>
-<script type="text/javascript" src="media/js/jquery-1.91.min.js"></script>
-<script type="text/javascript" src="media/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="media/js/vue.js"></script>
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="media/js/vue.min.js"></script>
+<script type="text/javascript" src="manage/nav.js"></script>
+<script type="text/javascript" src="manage/footer.js"></script>
 <script type="text/javascript" src="manage/privacy.js"></script>
 </body>
 </html>

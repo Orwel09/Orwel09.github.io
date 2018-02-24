@@ -117,19 +117,7 @@
                 ]
             },
             methods:{
-                showMenu:function(){
-                    var e = event.target;
-                    if($(e).next().css("display")=='none'){
-                        $(".secondMenu").css("display","none");
-                        $(e).next().css("display","block");
-                    }else{
-                        $(".secondMenu").css("display","none");
-                        $(e).next().css("display","none");
-                    }
-                },
-                downMenu:function(){
-                    $(".secondMenu").css("display","none");
-                }
+
             }
         })
     }

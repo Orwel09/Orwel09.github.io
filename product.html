@@ -8,66 +8,14 @@
           content="晶固（上海）智能系统有限公司是LED封装及技能控制技术应用于UV固化行业的领导者">
     <meta name="author" content="王勇强">
     <title>晶固（上海）智能系统有限公司</title>
-    <link rel="stylesheet" href="media/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="media/css/style.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="media/css/style.css"/>
 </head>
 <body>
-<div id="products" @click="downMenu()">
-    <!--菜单栏-->
-    <div class="top" style="margin-top: 30px;">
-        <img src="media/image/awellcure.png" onclick="document.location ='index.html'" class="top-inline pointer" style="margin-left:25px;width:200px;height: 34px;">
-        <div class="top-inline" style="margin-left: 20px;">
-            <div style="border: 2px solid#AA8EC2;width: 400px;"></div>
-            <ul id="menu" class="mar0" style="margin-top: 10px;">
-                <li>
-                    <div class="firstMenu">
-                        <a class="text" @click.stop="showMenu()">产品中心</a>
-                        <div class="secondMenu">
-                            <div class="secondMenuText" onclick="document.location ='product.html'">Ulticure</div>
-                            <div class="secondMenuText" onclick="document.location ='product.html'">Procure</div>
-                            <div class="secondMenuText bottom7" onclick="document.location ='product.html'">Ekocure</div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="firstMenu">
-                        <a class="text" @click.stop="showMenu()">技术简介</a>
-                        <div class="secondMenu">
-                            <div class="secondMenuText" onclick="document.location ='technology.html'">LED封装技术</div>
-                            <div class="secondMenuText" onclick="document.location ='technology.html'">智能控制技术</div>
-                            <div class="secondMenuText" onclick="document.location ='technology.html'">散热技术</div>
-                            <div class="secondMenuText" onclick="document.location ='technology.html'">光学技术</div>
-                            <div class="secondMenuText bottom7" onclick="document.location ='technology.html'">制程管理</div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="firstMenu">
-                        <a class="text" @click.stop="showMenu()">应用行业</a>
-                        <div class="secondMenu">
-                            <div class="secondMenuText" onclick="document.location ='application.html'">柔版印刷</div>
-                            <div class="secondMenuText" onclick="document.location ='application.html'">标签印刷</div>
-                            <div class="secondMenuText" onclick="document.location ='application.html'">标签印刷</div>
-                            <div class="secondMenuText" onclick="document.location ='application.html'">标签印刷</div>
-                            <div class="secondMenuText bottom7" onclick="document.location ='application.html'">标签印刷</div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="firstMenu">
-                        <a class="text" @click.stop="showMenu()">关于我们</a>
-                        <div class="secondMenu">
-                            <div class="secondMenuText" onclick="document.location ='company.html'">公司概况</div>
-                            <div class="secondMenuText" onclick="document.location ='company.html'">发展历程</div>
-                            <div class="secondMenuText" onclick="document.location ='business-activity.html'">企业活动</div>
-                            <div class="secondMenuText" onclick="document.location ='business-activity.html'">行业活动</div>
-                            <div class="secondMenuText" onclick="document.location ='file-download.html'">文件下载</div>
-                            <div class="secondMenuText bottom7" onclick="document.location ='contact.html'">联系我们</div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
+<div id="products" onclick="javascript:$('.secondMenu').css('display','none');">
+    <!--顶部-->
+    <div id="app-nav">
+        <app-nav></app-nav>
     </div>
     <!--产品介绍-->
     <div style="margin-left: 25px;margin-right: 25px;margin-bottom: 40px;">
@@ -76,41 +24,54 @@
         <div style="font-size:20px;margin-top: 32px;line-height: 36px;">
             晶固（上海）智能系统有限公司是 LED 固化技术应用的先驱，多年来一贯专注于UV LED产品的研发与制造。晶固（上海）智能系统有限公司通过系统研发方式，以LED光矩阵，光学导向，散热管理和电子性能为四大支柱，设计生产出一系列具有卓越性能的LED固化产品。晶固（上海）智能系统有限公司固化产品体型小，易集成，为设备制造商提供高UV 输出能量，坚固耐用的固化产品和解决方案。晶固（上海）智能系统有限公司产品采用365纳米，385纳米，395纳米和405纳米的紫外光波长，提供 风冷 和水冷两类固化光源，产品在无故障操作的前提下，确保最高的UV持续输出能力。晶固（上海）智能系统有限公司通过了ISO 9000:2008质量管理体系认证。晶固（上海）智能系统有限公司提供全球销售与技术支持，确保客户固化应用过程稳定可靠。
         </div>
+        <span class=" 晶固（上海）智能系统有限公司是 LED 固化技术应用的先驱，多年来一贯专注于UV LED产品的研发与制造。晶固（上海）智能系统有限公司通过系统研发方式，以LED光矩阵，光学导向，散热管理和电子性能为四大支柱，设计生产出一系列具有卓越性能的LED固化产品。晶固（上海）智能系统有限公司固化产品体型小，易集成，为设备制造商提供高UV 输出能量，坚固耐用的固化产品和解决方案。晶固（上海）智能系统有限公司产品采用365纳米，385纳米，395纳米和405纳米的紫外光波长，提供 风冷 和水冷两类固化光源，产品在无故障操作的前提下，确保最高的UV持续输出能力。晶固（上海）智能系统有限公司通过了ISO 9000:2008质量管理体系认证。晶固（上海）智能系统有限公司提供全球销售与技术支持，确保客户固化应用过程稳定可靠。
+
+         晶固（上海）智能系统有限公司是 LED 固化技术应用的先驱，多年来一贯专注于UV LED产品的研发与制造。晶固（上海）智能系统有限公司通过系统研发方式，以LED光矩阵，光学导向，散热管理和电子性能为四大支柱，设计生产出一系列具有卓越性能的LED固化产品。晶固（上海）智能系统有限公司固化产品体型小，易集成，为设备制造商提供高UV 输出能量，坚固耐用的固化产品和解决方案。
+
+         晶固（上海），智能系统有限公司产品采用365纳米，385纳米，395纳米和405纳米的紫外光波长，提供 风冷 和水冷两类固化光源，产品在无故障操作的前提下，确保最高的UV持续输出能力。晶固（上海）智能系统有限公司通过了ISO 9000:2008质量管理体系认证。晶固（上海）智能系统有限公司提供全球销售与技术支持，确保客户固化应用过程稳定可靠。
+
+          晶固（上海）智能系统有限公司是 LED 固化技术应用的先驱，多年来一贯专注于UV LED产品的研发与制造。晶固（上海）智能系统有限公司通过系统研发方式，以LED光矩阵，光学导向，散热管理和电子性能为四大支柱，设计生产出一系列具有卓越性能的LED固化产品。
+
+          晶固（上海）智能系统有限公司固化产品体型小，易集成，为设备制造商提供高UV 输出能量，坚固耐用的固化产品和解决方案。晶固（上海）智能系统有限公司产品采用365纳米，385纳米，395纳米和405纳米的紫外光波长，提供 风冷 和水冷两类固化光源，产品在无故障操作的前提下，确保最高的UV持续输出能力。晶固（上海）智能系统有限公司通过了ISO 9000:2008质量管理体系认证。晶固（上海）智能系统有限公司提供全球销售与技术支持，确保客户固化应用过程稳定可靠。
+
+           晶固（上海）智能系统有限公司是 LED 固化技术应用的先驱，多年来一贯专注于UV LED产品的研发与制造。晶固（上海）智能系统有限公司通过系统研发方式，以LED光矩阵，光学导向，散热管理和电子性能为四大支柱，设计生产出一系列具有卓越性能的LED固化产品。晶固（上海）智能系统有限公司固化产品体型小，易集成，为设备制造商提供高UV 输出能量，坚固耐用的固化产品和解决方案。晶固（上海）智能系统有限公司产品采用365纳米，385纳米，395纳米和405纳米的紫外光波长，提供 风冷 和水冷两类固化光源，产品在无故障操作的前提下，确保最高的UV持续输出能力。
+
+           晶固（上海）智能系统有限公司通过了ISO 9000:2008质量管理体系认证。晶固（上海）智能系统有限公司提供全球销售与技术支持，确保客户固化应用过程稳定可靠。
+
+           晶固（上海）智能系统有限公司是 LED 固化技术应用的先驱，多年来一贯专注于UV LED产品的研发与制造。
+
+           晶固（上海）智能系统有限公司通过系统研发方式，以LED光矩阵，光学导向，散热管理和电子性能为四大支柱，设计生产出一系列具有卓越性能的LED固化产品。晶固（上海）智能系统有限公司固化产品体型小，易集成，为设备制造商提供高UV 输出能量，坚固耐用的固化产品和解决方案。晶固（上海）智能系统有限公司产品采用365纳米，385纳米，395纳米和405纳米的紫外光波长，提供 风冷 和水冷两类固化光源，产品在无故障操作的前提下，确保最高的UV持续输出能力。晶固（上海）智能系统有限公司通过了ISO 9000:2008质量管理体系认证。晶固（上海）智能系统有限公司提供全球销售与技术支持，确保客户固化应用过程稳定可靠。 晶固（上海）智能系统有限公司是 LED 固化技术应用的先驱，多年来一贯专注于UV LED产品的研发与制造。
+
+           晶固（上海）智能系统有限公司通过系统研发方式，以LED光矩阵，光学导向，散热管理和电子性能为四大支柱，设计生产出一系列具有卓越性能的LED固化产品。晶固（上海）智能系统有限公司固化产品体型小，易集成，为设备制造商提供高UV 输出能量，坚固耐用的固化产品和解决方案。晶固（上海）智能系统有限公司产品采用365纳米，385纳米，395纳米和405纳米的紫外光波长，提供 风冷 和水冷两类固化光源，产品在无故障操作的前提下，确保最高的UV持续输出能力。晶固（上海）智能系统有限公司通过了ISO 9000:2008质量管理体系认证。晶固（上海）智能系统有限公司提供全球销售与技术支持，确保客户固化应用过程稳定可靠。
+
+        "></span>
     </div>
     <!--产品区域-->
     <div style="margin:0px 25px 25px 25px">
         <div class="row-fluid">
-            <div v-for="data in list" class="span3 inline" style="height: 256px;font-size:16px;margin:10px 10px 20px 1px;">
-                <div v-if="$index/4 >= 1" class="border1" style="margin-bottom:20px;margin-right:20px;"></div>
+            <div v-for="(data,index) in list" class="span3 inline" style="height: 256px;font-size:16px;margin:10px 10px 20px 1px;">
+                <div v-if="index/4 >= 1" class="border1" style="margin-bottom:20px;margin-right:20px;"></div>
                 <span class="block marBottom10 text20">{{data.name}}({{data.type}})</span>
                 <img class="block marBottom10" src="media/image/FireEdge.png">
-                <span class="block marBottom10"style="line-height: 35px;word-wrap: break-word;">固化区域(mm):
-                    {{data.size}}
+                <span class="block marBottom10"style="line-height: 35px;word-wrap: break-word;">
+                    固化区域(mm):{{data.size}}
                 </span>
-                <span class="block marBottom10">峰值辐照度:≤
-                    {{data.length}}W/cm²
+                <span class="block marBottom10">
+                    峰值辐照度:≤{{data.length}}W/cm²
                 </span>
             </div>
         </div>
     </div>
     <!--底部-->
-    <div style="width: 100%;height: 169px;background-color: #9E8EBD;">
-        <div style="text-align: center;padding-top: 28px;color:#fff;">
-            <a href="contact.html" style="font-size: 16px;color: #fff;">联系我们</a>&nbsp;&nbsp;|
-            <a href="privacy.html" style="font-size: 16px;color: #fff;">隐私权政策</a>&nbsp;&nbsp;|
-            <a href="" style="font-size: 16px;color: #fff;">网站布局</a>&nbsp;&nbsp;|
-        </div>
-        <div style="text-align: center;margin-top: 28px;font-size: 16px;color: #fff;">
-            Awellcure是LED封装技术及智能控制技术应用于UV固化的领导者
-        </div>
-        <div style="text-align: center;margin-top: 28px;font-size: 16px;color: #fff;">
-            CopyRight © 2017-2018 awellcure.com 沪ICP备05000000号
-        </div>
+    <div id="app-footer">
+        <app-footer></app-footer>
     </div>
 </div>
-<script type="text/javascript" src="media/js/jquery-1.91.min.js"></script>
-<script type="text/javascript" src="media/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="media/js/vue.js"></script>
+<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="media/js/vue.min.js"></script>
+<script type="text/javascript" src="manage/nav.js"></script>
+<script type="text/javascript" src="manage/footer.js"></script>
 <script type="text/javascript" src="manage/product.js"></script>
 </body>
 </html>
